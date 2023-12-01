@@ -1,0 +1,9 @@
+UNITS ENERGY=kcal/mol LENGTH=A TIME=ps
+
+# set up two variables for Phi and Psi dihedral angles 
+phi: TORSION ATOMS=5,7,9,15
+psi: TORSION ATOMS=7,9,15,17
+
+metad: METAD ARG=phi,psi PACE=500 HEIGHT=1.2 SIGMA=0.3,0.3 FILE=run_ala2_metad_sigma0.3_height1.2_pace500.hills.dat GRID_MIN=-pi,-pi GRID_MAX=pi,pi CALC_RCT
+
+PRINT ARG=* STRIDE=500 FILE=run_ala2_metad_sigma0.3_height1.2_pace500.colvars.dat
