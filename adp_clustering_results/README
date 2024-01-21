@@ -4,4 +4,4 @@ w1 -> bias
 w2 -> rbias
 w3 -> fbias
 
-The scripts used to run the clusterings for these runs can be found in scripts_run_clusterings folder.
+The scripts used to run the clusterings for these multiple runs can be found in scripts_run_clusterings folder.
